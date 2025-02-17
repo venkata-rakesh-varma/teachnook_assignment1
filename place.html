@@ -3,108 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Indian States and Historical Places</title>
     <style>
-        .state-box {
-            border-radius: 10px;
-            display: inline-block;
-            width: 150px;
-            height: 150px;
-            margin: 10px;
-            border: 1px solid #000;
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+            padding: 10px;
+        }
+        .grid-item {
             text-align: center;
-            line-height: 150px;
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
             cursor: pointer;
-            background-color: #9f9b9b;
         }
     </style>
+    <title>Document</title>
 </head>
-<body bgcolor="black">
-    <h1 align ="center" style="color: rgb(194, 194, 194);">Click on a State</h1>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/andhra/heritage';">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Andhra_Pradesh_Seal.svg/1200px-Andhra_Pradesh_Seal.svg.png" alt="Andhra Pradesh"><br>Andhra Pradesh
+<body>
+    <div class="grid-container">
+        <div class="grid-item">
+            <button style="width: 300px; height: 300px;"><img src="https://www.telangana.gov.in/wp-content/uploads/2023/09/Telangana-State-Map.png" alt="Image 1" style="width: 100%;height: 300px"></button>
+            <b> Telangana </b>
+        </div>
+        <div class="grid-item">
+            <button style="width: 300px; height: 300px;"><img src="https://icid.org/icid2023/images/apmap.png" alt="Image 2" style="width: 100%;height: 290px;"></button>
+            <b> Andhra Pradesh </b>
+        </div>
+        <div class="grid-item">
+            <button style="width: 300px; height: 300px;"><img src="https://i.pinimg.com/564x/78/94/d3/7894d3e65a5e48b14fb1df2ccef6a0a9.jpg" alt="Image 3" style="width: 100%; height: 300px;"></button>
+            <b> karnataka </b>
+        </div>
+        <div class="grid-item">
+            <button style="width: 300px; height: 300px;"><img src="https://c8.alamy.com/comp/RXDC4T/kerala-map-with-districts-highlighted-RXDC4T.jpg" alt="Image 3" style="width: 100%; height: 300px;"></button>
+            <b> kerala </b>
+        </div>
+        <div class="grid-item">
+            <button style="width: 300px; height: 300px;"><img src="https://diligentias.com/wp-content/uploads/2019/06/Tamil-Nadu.png" alt="Image 3" style="width: 100%; height: 300px;"></button>
+            <b> tamilnadu</b>
     </div>
-    <div class="state-box" onclick="window.location.href='https://www.thrillophilia.com/historical-places-in-arunachal-pradesh';">
-        <img src="https://via.placeholder.com/150" alt="Arunachal Pradesh"><br>Arunachal Pradesh
-    </div>
-    <div class="state-box" onclick="window.location.href='https://internationalschoolguwahati.com/ancient-wonders-10-historical-places-in-assam-one-must-visit/';">
-        <img src="https://via.placeholder.com/150" alt="Assam"><br>Assam
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.holidify.com/collections/historical-places-in-bihar';">
-        <img src="https://via.placeholder.com/150" alt="Bihar"><br>Bihar
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/chhattisgarh/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Chhattisgarh"><br>Chhattisgarh
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/goa/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Goa"><br>Goa
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/gujarat/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Gujarat"><br>Gujarat
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/haryana/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Haryana"><br>Haryana
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/himachal/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Himachal Pradesh"><br>Himachal Pradesh
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/jharkhand/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Jharkhand"><br>Jharkhand
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/karnataka/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Karnataka"><br>Karnataka
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/kerala/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Kerala"><br>Kerala
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/madhya/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Madhya Pradesh"><br>Madhya Pradesh
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/maharashtra/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Maharashtra"><br>Maharashtra
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/manipur/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Manipur"><br>Manipur
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/meghalaya/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Meghalaya"><br>Meghalaya
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/mizoram/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Mizoram"><br>Mizoram
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/nagaland/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Nagaland"><br>Nagaland
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/odisha/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Odisha"><br>Odisha
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/punjab/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Punjab"><br>Punjab
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/rajasthan/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Rajasthan"><br>Rajasthan
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/sikkim/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Sikkim"><br>Sikkim
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/tamilnadu/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Tamil Nadu"><br>Tamil Nadu
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/telangana/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Telangana"><br>Telangana
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/tripura/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Tripura"><br>Tripura
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/uttarpradesh/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Uttar Pradesh"><br>Uttar Pradesh
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/uttarakhand/heritage';">
-        <img src="https://via.placeholder.com/150" alt="Uttarakhand"><br>Uttarakhand
-    </div>
-    <div class="state-box" onclick="window.location.href='https://www.trawell.in/westbengal/heritage';">
-        <img src="https://via.placeholder.com/150" alt="West Bengal"><br>West Bengal
-    </div>
-    <!-- Add more states as needed -->
 </body>
 </html>
